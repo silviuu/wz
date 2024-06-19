@@ -1,0 +1,14 @@
+
+
+.btn-send {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin-bottom: 20px;
+}
+
+.help-block.with-errors {
+    color: #ffae50;
+    margin-top: 5px;
+    font-size: 80%;
+}
