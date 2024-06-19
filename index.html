@@ -32,6 +32,27 @@
             --font-clan-signature: Corinthia, 'gg sans', cursive, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Symbols';
 
         }
+
+        .media-inner {
+            padding-bottom: 52px;
+        }
+
+        /* Mobile Youtube */
+        @media screen  {
+            iframe[src*="youtube"] {
+                width: 100vw;
+                max-width: 177.78vh;
+                /* 16/9 = 1.778 */
+                height: 56.25vw;
+                /* height:width ratio = 9/16 = .5625  */
+                max-height: 100vh;
+            }
+        }
+
+        .youtube .media-inner {
+            padding-bottom: 0px;
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -59,18 +80,11 @@
                 </div>
                 <div class="col-xs-4"></div>
             </div>
-            <div class="row mt-4">
-                <div class="col-xs-4"></div>
-                <div class="col-xs-4">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
-                    </div>
-                </div>
-                <div class="col-xs-4"></div>
-            </div>
         </div>
 
-
+        <div class="embed-responsive embed-responsive-16by9 mt-4">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fjpbX_NpLoM?autoplay=1&mute=1" allowfullscreen autoplay="1"></iframe>
+        </div>
 
 
         <script>
